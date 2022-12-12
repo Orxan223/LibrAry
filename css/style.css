@@ -1,0 +1,341 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  --bg-main: #fffaf5;
+
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-main) !important;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+nav {
+  background: #720418;
+  position: fixed;
+  height: 100vh;
+  padding: 2.4rem;
+}
+
+.logo {
+  margin-bottom: 5.2rem;
+}
+
+.menu-item,
+.admin a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.menu-item:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 12.8rem 3.2rem;
+  margin-left: 35rem;
+}
+
+.admin {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+}
+
+.admin a {
+  color: #000;
+  gap: 0.8rem;
+}
+
+.admin img {
+  margin-bottom: 0.7rem;
+}
+
+.section-home {
+  margin-bottom: 8rem;
+}
+
+.section-home h2,
+.section-about h2 {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.search-input {
+  border: 2px solid rgba(57, 31, 0, 0.48);
+  border-radius: 3.4rem;
+  padding: 1rem 3rem;
+}
+
+.search-input::placeholder {
+  color: #adadad;
+}
+
+.search-btn {
+  background-color: #ff8b00;
+  border-radius: 3.4rem;
+  border: none;
+  padding: 0.8rem 2rem;
+  margin-left: 0.4rem;
+}
+
+.search-btn img {
+  width: 1.1rem;
+}
+
+.search-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.section-book-form {
+  margin-bottom: 16rem;
+}
+
+.section-book-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+form label {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+form input {
+  border: 1px solid #e2e6ee;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+form button {
+  background: #ff8b00;
+  border-radius: 10px;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+#about .form-group h6 {
+  font-size: 18px;
+  font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"';
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+#about .form-group label {
+  display: block;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#about .form-group input {
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 1px solid rgb(219, 216, 216);
+}
+
+#about .form-group input:focus {
+  box-shadow: 1px 1px 10px 1px rgb(170, 213, 221);
+}
+
+#about .form-group input,
+textarea {
+  width: 80%;
+  padding: 0.5rem 1rem;
+}
+
+#about .form-group textarea {
+  height: 130px;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 1px solid rgb(219, 216, 216);
+}
+
+#about .form-group textarea:focus {
+  box-shadow: 1px 1px 10px 1px rgb(170, 213, 221);
+}
+
+#about form button {
+  background-color: #ff8b00;
+  width: 80%;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Join */
+
+#join {
+  margin-top: 120px;
+}
+#join thead {
+  background-color: #720418;
+  color: white;
+  width: 60%;
+}
+
+#join table {
+  width: 57%;
+}
+
+#join thead tr th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+#join tbody tr th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+#join tbody tr th:first-child {
+  font-weight: bold;
+}
+
+#join tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.6rem;
+}
+
+/* contact */
+#contact {
+  margin-top: 120px;
+}
+#contact thead {
+  background-color: #720418;
+  color: white;
+  width: 60%;
+  font-size: 1.6rem;
+}
+#contact h2 {
+  margin-bottom: 1.5rem;
+}
+
+#contact table {
+  width: 100%;
+}
+
+#contact .col-lg-9 {
+  margin-bottom: 80px;
+}
+
+#contact thead tr th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+}
+#contact tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+#contact tbody tr th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+#contact tbody tr th:first-child {
+  font-weight: bold;
+}
+
+.admin-login {
+  --bg-main: #720418;
+}
+
+.hidden {
+  display: none;
+}
+.container-login-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 5.5rem 3.2rem 2.6rem 3.2rem;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 35%;
+}
+
+#form-login-panel {
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-login-panel h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 5.5rem;
+}
+
+#form-login-panel input {
+  padding: 1.4rem;
+  outline: none;
+  border: 1px solid #cecece;
+  margin-bottom: 3.4rem;
+  width: 100%;
+}
+
+#form-login-panel button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  width: 100%;
+  background: #e16a00;
+  border: 1px solid #cecece;
+  border-radius: 0.5rem;
+  padding: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+}

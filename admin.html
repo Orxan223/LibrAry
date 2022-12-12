@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/firebase.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="container-login-panel hidden">
+      <form action="#" id="form-login-panel">
+        <h1>Welcome Admin</h1>
+        <input id="adminUsername" type="text" placeholder="Username" />
+        <input id="adminPassword" type="password" placeholder="Password" />
+        <button>Join</button>
+      </form>
+    </div>
+
+    <nav id="navAdmin">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo.png" alt="book-img"
+        /></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="menu-item" href="#section-book-form"
+              ><img src="./assets/img/book-img.png" alt="book-img" />Home</a
+            >
+          </li>
+          <li>
+            <a class="menu-item" href="#section-about"
+              ><img src="./assets/img/book-img.png" alt="book-img" />About</a
+            >
+          </li>
+          <li>
+            <a class="menu-item" href="#join"
+              ><img src="./assets/img/book-img.png" alt="book-img" />Join Us</a
+            >
+          </li>
+          <li>
+            <a class="menu-item" href="#contact"
+              ><img src="./assets/img/book-img.png" alt="book-img" />Contact</a
+            >
+          </li>
+          <li>
+            <a id="logoutBtn" class="menu-item" href="#logout"
+              ><img src="./assets/img/book-img.png" alt="book-img" />Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="mainAdmin">
+      <div class="admin">
+        <a href="#"
+          ><img src="./assets/img/admin-img.png" alt="admin-img" />Admin</a
+        >
+      </div>
+      <section class="section-home">
+        <h2>Add book</h2>
+
+        <div class="search-content">
+          <h3>Search book</h3>
+          <input class="search-input" type="text" placeholder="Search Book" />
+          <button class="search-btn">
+            <img src="./assets/img/search-icon.png" alt="search-icon" />
+          </button>
+        </div>
+      </section>
+      <section id="section-book-form" class="section-book-form">
+        <h2>Book form</h2>
+        <form action="#">
+          <label for="">Book Name</label>
+          <input type="text" />
+          <label for="">Author Name</label>
+          <input type="text" />
+          <label for="">Book Image Url</label>
+          <input type="text" />
+          <label for="">Description</label>
+          <input type="text" />
+          <label for="">Book Type</label>
+          <input type="text" />
+          <button>Add</button>
+        </form>
+      </section>
+
+      <section id="section-about" class="section-about">
+        <h2>About Store</h2>
+        <form action="#">
+          <label for="">Title</label>
+          <input id="aboutTitle" type="text" />
+          <label for="">Book Image Url</label>
+          <input id="aboutImage" type="text" />
+          <label for="">Description</label>
+          <input id="aboutDescription" type="text" />
+          <button id="addAbout">About info add</button>
+        </form>
+      </section>
+
+      <section id="join">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <h2>Join Us</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Email Address</th>
+                  </tr>
+                </thead>
+                <tbody id="joinusTable"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <h2>Contact Us</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                  </tr>
+                </thead>
+                <tbody id="contactTable"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
